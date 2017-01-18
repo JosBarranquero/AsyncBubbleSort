@@ -12,6 +12,7 @@
 
     <TextView
         android:id="@+id/txvProgress"
+        android:freezesText="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -40,4 +41,14 @@
         android:layout_below="@+id/txvProgress"
         android:visibility="gone"
         android:text="@string/cancel"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/pbProgress" />
 </RelativeLayout>
